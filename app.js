@@ -11,4 +11,4 @@ app.get('/maintenance', (req, res) => {
     res.sendFile(__dirname + "/views/maintenance.html")
 })
 
-app.listen(port, () => console.log("Rodando..."))
+app.listen(port, () => console.log("The server is runing..."))
