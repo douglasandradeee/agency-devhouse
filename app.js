@@ -20,4 +20,12 @@ app.get('/maintenance', (req, res) => {
     res.sendFile(__dirname + "/views/maintenance.html")
 })
 
+app.get('/products', (req, res) => {
+    res.sendFile(__dirname + "/views/maintenance.html")
+})
+
+app.get('/depositions', (req, res) => {
+    res.sendFile(__dirname + "/views/maintenance.html")
+})
+
 app.listen(port, () => console.log("The server is runing..."))

@@ -1,2 +1,91 @@
-h1 {
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  background-color: #fff;
+  align-items: center;
+}
+
+.menu {
+}
+
+.menu a {
+  color: #1e266d;
+  margin-left: 50px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.atendimento button {
+  background-color: #3751ff;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.banner {
+  padding: 40px;
+  background-color: #f2f9ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.banner h1 {
+  color: #1e266d;
+}
+
+.banner p {
+  color: #455880;
+}
+
+.button1-conheca {
+  background-color: #3751ff;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.button2-contato {
+  background-color: #fff;
+  font-weight: bold;
+  color: #455880;
+  padding: 10px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+/* .banner img {
+  display: none;
+} */
+.menu-mobile {
+  display: none;
+}
+
+@media (max-width: 465px) {
+  .menu-mobile {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+  .atendimento {
+    display: none;
+  }
 }
