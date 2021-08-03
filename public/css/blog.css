@@ -1,0 +1,32 @@
+body {
+  background-color: #f2f9ff;
+}
+
+.DHNews {
+  font-size: 16px;
+  color: #1e266d;
+}
+
+p {
+  font-size: 16px;
+  /* text-align: justify; */
+}
+
+.aulaFoto {
+  margin: 10px 5px 5px 5px;
+  width: 75vw;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+}
+.icon-social {
+  width: 60px;
+}

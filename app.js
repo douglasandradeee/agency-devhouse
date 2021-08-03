@@ -1,31 +1,17 @@
 const express = require('express')
+const path = require('path')
 const app = express()
 const port = 5000
+const routes = require('./routes')
+const productsRoutes = require('./routes/products')
 
+//Configurando o template engine
+app.set('view engine', 'ejs')
+app.set('views', path.resolve('views'))
+
+app.use(express.json())
+app.use(routes)
+app.use(productsRoutes)
 app.use(express.static("public"))
-
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + "/views/home.html")
-})
-
-app.get('/home', (req, res) => {
-    res.sendFile(__dirname + "/views/home.html")
-})
-
-app.get('/blog', (req, res) => {
-    res.sendFile(__dirname + "/views/blog.html")
-})
-
-app.get('/maintenance', (req, res) => {
-    res.sendFile(__dirname + "/views/maintenance.html")
-})
-
-app.get('/products', (req, res) => {
-    res.sendFile(__dirname + "/views/maintenance.html")
-})
-
-app.get('/depositions', (req, res) => {
-    res.sendFile(__dirname + "/views/maintenance.html")
-})
-
+app.use(express.urlencoded({ extended: false }))
 app.listen(port, () => console.log("The server is runing..."))

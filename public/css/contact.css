@@ -1,23 +1,30 @@
-.banner {
-  padding: 40px;
-  background-color: #f2f9ff;
+#Contato {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
+  padding: 0 60px;
+  height: 50vh;
 }
 
-.banner h1 {
+#Contato h1 {
   color: #1e266d;
-  font-size: 46px;
 }
 
-.banner p {
-  margin: 11.5px;
-  color: #455880;
+body {
+  background-color: #f2f9ff;
 }
 
-.button1-conheca {
+.input-padrao {
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  border-color: gray;
+  font-size: 22px;
+  margin: 10px 0;
+  padding: 5px;
+}
+
+.button-reset {
   background-color: #3751ff;
   font-weight: bold;
   color: #fff;
@@ -27,10 +34,10 @@
   cursor: pointer;
 }
 
-.button2-contato {
+.button-submit {
   background-color: #fff;
   font-weight: bold;
-  color: #455880;
+  color: #1e266d;
   padding: 10px;
   border-radius: 40px;
   cursor: pointer;
