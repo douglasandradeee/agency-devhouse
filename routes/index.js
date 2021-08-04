@@ -1,6 +1,7 @@
 const express = require('express')
 const routes = express.Router()
 const path = require('path')
+const depositions = require('../models/depositions')
 
 routes.get('/', (req, res) => {
     res.render("home",{title: "Sua empresa entre as melhores"})
@@ -31,7 +32,7 @@ routes.get('/products', (req, res) => {
 })
 
 routes.get('/depositions', (req, res) => {
-    res.redirect('/maintenance')
+    res.render('depositions', {depositions})
 })
 
 module.exports = routes
