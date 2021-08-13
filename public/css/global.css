@@ -12,9 +12,10 @@ body {
 
 body footer {
   /* bottom: 0; */
-  width: 90vw;
+  width: 100vw;
   position: absolute;
   background-position: bottom;
+  margin-top: 100%;
 }
 
 .menu a {
@@ -36,6 +37,8 @@ body footer {
 }
 
 header {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: space-between;
   height: 80px;

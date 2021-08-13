@@ -1,4 +1,4 @@
-const depositions = [
+let depositions = [
     {
         author: "Douglas",
         title: "Primeiro depoimento",

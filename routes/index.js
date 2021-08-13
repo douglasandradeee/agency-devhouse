@@ -1,38 +1,21 @@
 const express = require('express')
 const routes = express.Router()
-const path = require('path')
-const depositions = require('../models/depositions')
+const indexController = require('../controllers/index')
 
-routes.get('/', (req, res) => {
-    res.render("home",{title: "Sua empresa entre as melhores"})
-})
+routes.get('/', indexController.viewHome)
 
-routes.get('/home', (req, res) => {
-    res.redirect('/')
-})
+routes.get('/home', indexController.viewHome)
 
-routes.get('/blog', (req, res) => {
-    res.render("blog")
-})
+routes.get('/products', indexController.viewProducts)
 
-routes.get('/maintenance', (req, res) => {
-    res.render("maintenance")
-})
+routes.get('/blog', indexController.viewBlog)
 
-routes.get('/contact', (req, res) => {
-    res.render("contact")
-})
+routes.get('/depositions', indexController.viewDepositions)
 
-routes.post('/create-contact', (req, res) => {
-    res.render("contact")
-})
+routes.get('/contact', indexController.viewContact)
 
-routes.get('/products', (req, res) => {
-    res.redirect('/maintenance')
-})
+routes.post('/create-contact', indexController.viewContact)
 
-routes.get('/depositions', (req, res) => {
-    res.render('depositions', {depositions})
-})
+routes.get('/maintenance', indexController.viewMaintenance)
 
 module.exports = routes

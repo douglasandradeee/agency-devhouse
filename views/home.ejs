@@ -8,73 +8,16 @@
         <link rel="stylesheet" href="/css/home.css">
     </head>
     <body>
-        <header>
-            <img src="/img/logo.png"alt="Agency - DevHouse"title="Agency - DevHouse" id="logo">
-            <img class = "menu-mobile" src="/img/menu-icon.png"alt="menu-mobile"title="menu-mobile" id="menu">
-            <nav class = "menu">
-                <a href="http://localhost:5000">Home</a>
-                <a href="http://localhost:5000/products">Produtos</a>
-                <a href="http://localhost:5000/depositions">Depoimentos</a>
-                <a href="http://localhost:5000/blog">Blog</a>
-            </nav>
-            <div class = "atendimento">
-                <a href="tel:+1140028922">(11) 4002 - 8922</a>
-                <button>Atendimento</button>
-            </div>
-        </header>
+        <%- include('components/header.ejs') %>
         <section class = banner>
             <h1><%= title%></h1>
             <p>podemos alavancar seu negocio</p>
             <div>
                 <button class="button1-conheca">Conheça Agora</button>
-                <button class="button2-contato">Entre em contato</button>
+                <a href="http://localhost:5000/contact"><button class="button2-contato">Entre em contato</button></a>
             </div>
             <img src="../img/banner.png" alt = "Banner-1" title = "Banner-1" id = "banner-1">
         </section>
-        <footer>
-            <ul>
-            <li>
-                <a target="_blank" href="https://www.facebook.com/digitalhousebrasil">
-                <img
-                    class="icon-social"
-                    src="/img/facebook.svg"
-                    alt="Icone Facebook"
-                />
-                </a>
-            </li>
-            <li>
-                <a
-                target="_blank"
-                href="https://www.instagram.com/digitalhousebrasil/"
-                >
-                <img
-                    class="icon-social"
-                    src="/img/instagram.svg"
-                    alt="Icone Instagram"
-                />
-                </a>
-            </li>
-            <li>
-                <a
-                target="_blank"
-                href="https://www.linkedin.com/school/digital-house-brasil/mycompany/"
-                >
-                <img
-                    class="icon-social"
-                    src="/img/linkedin.svg"
-                    alt="Icone LinkedIn"
-                />
-                </a>
-            </li>
-            <li>
-                <a
-                target="_blank"
-                href="https://www.youtube.com/channel/UCRQdwmWMhTcqDFjPT4UPZYA/featured"
-                >
-                <img class="icon-social" src="/img/youtube.svg" alt="Youtube" />
-                </a>
-            </li>
-            </ul>
-        </footer>
+        <%- include('components/footer.ejs') %>
     </body>
 </html>
